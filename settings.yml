@@ -17,6 +17,17 @@ message_bubble_color:
     - purple
   description: 'Select background colour of the message bubbles. The primary and link options are taken from your site settings.'
   
+  message_bubble_opacity:
+  type: enum
+  default: 10%
+  choices:
+    - 5%
+    - 10%
+    - 15%
+    - 20%
+    - 25%
+  description: 'Select opacity of the background colour. The larger the percentage the deeper more colour'
+  
 message_button_added_text:
   type: string
   default: ''
