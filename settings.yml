@@ -5,16 +5,17 @@ show_message_bubble:
 
 message_bubble_color:
   type: enum
-  default: grey
+  default: link
   choices:
-    - grey
+    - primary
+    - link
     - red
     - orange
     - yellow
     - green
     - blue
     - purple
-  description: 'Select background colour of the message bubbles'
+  description: 'Select background colour of the message bubbles. The primary and link options are taken from your site settings.'
   
 message_button_added_text:
   type: string
