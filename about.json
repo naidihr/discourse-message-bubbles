@@ -1,0 +1,6 @@
+{
+  "name": "Discourse Personal Message Bubbles",
+  "about_url": "https://github.com/naidihr/discourse-message-bubbles",
+  "license_url": "https://github.com/naidihr/discourse-message-bubbles/blob/master/LICENSE"
+  "component": true,
+}
