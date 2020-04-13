@@ -14,6 +14,7 @@ $message-bubble-background-color: mix($message_bubble_color, $secondary, 5%);
 
 /* Message bubble colour */
 .archetype-private_message .topic-body .cooked {
+     @if $show_message_bubble  == "true" {
       background: $message-bubble-background-color;    
       border: 1px solid #a7a7a7;
       -webkit-border-radius: 1.5em;
