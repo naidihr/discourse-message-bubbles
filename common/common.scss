@@ -3,6 +3,14 @@
 /* message_bubble_opacity: defined as theme setting */
 /* $message_button_added_text: defined as theme setting */
 
+@if $message_bubble_color == "primary" {
+    $message-bubble-color: $primary;
+}
+
+@if $message_bubble_color == "link" {
+    $message-bubble-color: $tertiary;
+}
+
 $message-bubble-background-color: mix($message_bubble_color, $secondary, 10%);
 
 @if $message_bubble_opacity == "5%" {
