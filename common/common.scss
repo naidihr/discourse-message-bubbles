@@ -3,7 +3,7 @@
 /* message_bubble_opacity: defined as theme setting */
 /* $message_button_added_text: defined as theme setting */
 
-$message-bubble-background-color: mix($message_bubble_color, $secondary, $message_bubble_opacity + '%');
+$message-bubble-background-color: mix($message_bubble_color, $secondary, $message_bubble_opacity);
 
 
 /* Add text to Reply buttons */
