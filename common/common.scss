@@ -1,0 +1,32 @@
+@import "common/foundation/variables";
+/* $message_bubble_color: defined as theme setting */
+/* $message_button_added_text: defined as theme setting */
+
+$message-bubble-background-color: mix($message_bubble_color, $secondary, 5%);
+
+
+/* Add text to Reply buttons */
+.archetype-private_message .topic-post button.create:after,
+.archetype-private_message #topic-footer-buttons button.create:after,
+.archetype-private_message #reply-control .btn-primary:after {
+    content: "#{$message_button_added_text}";
+}
+
+/* Message bubble colour */
+.archetype-private_message .topic-body .cooked {
+      background: $message-bubble-background-color;    
+      border: 1px solid #a7a7a7;
+      -webkit-border-radius: 1.5em;
+            border-radius: 1.5em;
+            border-top-left-radius: 0px;
+      -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+      max-width: 100%;
+      padding: 1em;
+      position: relative;
+      display:inline-block;
+    }
+}
+
+
+
