@@ -5,15 +5,15 @@ show_message_bubble:
 
 message_bubble_color:
   type: enum
-  default: blue
+  default: grey
   choices:
+    - grey
     - red
     - orange
     - yellow
     - green
     - blue
     - purple
-    - grey
   description: 'Select background colour of the message bubbles'
   
 message_button_added_text:
