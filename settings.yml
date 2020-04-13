@@ -13,6 +13,7 @@ message_bubble_color:
     - green
     - blue
     - purple
+    - grey
   description: 'Select background colour of the message bubbles'
   
 message_button_added_text:
