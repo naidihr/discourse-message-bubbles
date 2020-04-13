@@ -3,7 +3,27 @@
 /* message_bubble_opacity: defined as theme setting */
 /* $message_button_added_text: defined as theme setting */
 
-$message-bubble-background-color: mix($message_bubble_color, $secondary, $message_bubble_opacity);
+$message-bubble-background-color: mix($message_bubble_color, $secondary, 10%);
+
+@if $message_bubble_opacity == "5%" {
+    $message-bubble-background-color: mix($message_bubble_color, $secondary, 5%);
+}
+
+@if $message_bubble_opacity == "10%" {
+    $message-bubble-background-color: mix($message_bubble_color, $secondary, 10%);
+}
+
+@if $message_bubble_opacity == "15%" {
+    $message-bubble-background-color: mix($message_bubble_color, $secondary, 15%);
+}
+
+@if $message_bubble_opacity == "20%" {
+    $message-bubble-background-color: mix($message_bubble_color, $secondary, 20%);
+}
+
+@if $message_bubble_opacity == "25%" {
+    $message-bubble-background-color: mix($message_bubble_color, $secondary, 25%);
+}
 
 
 /* Add text to Reply buttons */
