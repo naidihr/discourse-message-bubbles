@@ -19,13 +19,13 @@ message_bubble_color:
   
 message_bubble_opacity:
   type: enum
-  default: 10
+  default: 10%
   choices:
-    - 5
-    - 10
-    - 15
-    - 20
-    - 25
+    - 5%
+    - 10%
+    - 15%
+    - 20%
+    - 25%
   description: 'Select opacity of the background color. The larger the percentage the deeper more color'
   
 message_button_added_text:
