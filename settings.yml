@@ -1,0 +1,22 @@
+show_message_bubble:
+  type: bool
+  default: true
+  description: 'Show messages in speech bubbles'
+
+message_bubble_color:
+  type: enum
+  default: blue
+  choices:
+    - red
+    - orange
+    - yellow
+    - green
+    - blue
+    - purple
+  description: 'Select background colour of the message bubbles'
+  
+message_button_added_text:
+  type: string
+  default: ''
+  description: 'Text to be appended to "Reply" button'
+
