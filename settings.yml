@@ -1,23 +1,39 @@
-show_message_bubble:
+Show_message_bubbles:
   type: bool
   default: true
   description: 'Show messages in speech bubbles'
 
-message_bubble_color:
+Your_message_bubble_color:
   type: enum
-  default: link
+  default: green
   choices:
     - primary
-    - link
+    - secondary
+    - tertiary
     - red
     - orange
     - yellow
     - green
     - blue
     - purple
-  description: 'Select background color of the message bubbles. The primary and link options are taken from your site settings.'
-  
-message_bubble_opacity:
+  description: 'Select the background color of <b>your</b> messages, sent from you.<br>The primary, secondary and teriary options are taken from your theme color settings.'
+
+Other_message_bubble_color:
+  type: enum
+  default: secondary
+  choices:
+    - primary
+    - secondary
+    - tertiary
+    - red
+    - orange
+    - yellow
+    - green
+    - blue
+    - purple
+  description: 'Select the background color of <b>other</b> messages, sent to you.<br>The primary, secondary and teriary options are taken from your theme color settings.'
+
+Message_bubble_opacity:
   type: enum
   default: 10%
   choices:
@@ -26,9 +42,14 @@ message_bubble_opacity:
     - 15%
     - 20%
     - 25%
-  description: 'Select opacity of the background color. The larger the percentage the deeper more color'
+  description: 'Select the opacity of the background colors. The larger the percentage the deeper more color'
   
-message_button_added_text:
+Show_box_shadow:
+  type: bool
+  default: true
+  description: 'Show a box shadow on the message bubbles' 
+  
+Message_button_added_text:
   type: string
   default: ''
   description: 'Text to be appended to "Reply" button'
