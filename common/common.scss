@@ -63,7 +63,7 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
 .archetype-private_message .topic-post button.create:after,
 .archetype-private_message #topic-footer-buttons button.create:after,
 .archetype-private_message #reply-control .btn-primary:after {
-    content: "#{$message_button_added_text}";
+    content: "#{$Message_button_added_text}";
 }
 
 @if $show_message_bubble  == "true" {
