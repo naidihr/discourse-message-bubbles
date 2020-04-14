@@ -1,7 +1,7 @@
 # discourse-message-bubbles
 
 Discourse Message Bubbles is a Discourse theme plugin.
-https://meta.discourse.org/
+https://meta.discourse.org/t/personal-message-bubbles/147994
 
 The theme plugin changes the style of the personal message posts to bubbles to help distinguish them from topics.
 
