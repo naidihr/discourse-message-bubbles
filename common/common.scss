@@ -1,36 +1,61 @@
 @import "common/foundation/variables";
-/* $message_bubble_color: defined as theme setting */
-/* message_bubble_opacity: defined as theme setting */
-/* $message_button_added_text: defined as theme setting */
+/* $Show_message_bubbles: defined as theme setting */
+/* $Your_message_bubble_color: defined as theme setting */
+/* $Their_message_bubble_color: defined as theme setting */
+/* $Message_bubble_opacity: defined as theme setting */
+/* $Show_box_shadow: defined as theme setting */
+/* $Message_button_added_text: defined as theme setting */
 
-@if $message_bubble_color == "primary" {
-    $message-bubble-color: $primary;
+@if $Your_message_bubble_color == "primary" {
+    $Your_message-bubble-color: $primary;
 }
 
-@if $message_bubble_color == "link" {
-    $message-bubble-color: $tertiary;
+@if $Your_message_bubble_color == "secondary" {
+    $Your_message-bubble-color: $secondary;
 }
 
-$message-bubble-background-color: mix($message_bubble_color, $secondary, 10%);
-
-@if $message_bubble_opacity == "5%" {
-    $message-bubble-background-color: mix($message_bubble_color, $secondary, 5%);
+@if $Your_message_bubble_color == "tertiary" {
+    $Your_message-bubble-color: $tertiary;
 }
 
-@if $message_bubble_opacity == "10%" {
-    $message-bubble-background-color: mix($message_bubble_color, $secondary, 10%);
+@if $Other_message_bubble_color == "primary" {
+    $Other_message-bubble-color: $primary;
 }
 
-@if $message_bubble_opacity == "15%" {
-    $message-bubble-background-color: mix($message_bubble_color, $secondary, 15%);
+@if $Other_message_bubble_color == "secondary" {
+    $Other_message-bubble-color: $secondary;
 }
 
-@if $message_bubble_opacity == "20%" {
-    $message-bubble-background-color: mix($message_bubble_color, $secondary, 20%);
+@if $Other_message_bubble_color == "tertiary" {
+    $Other_message-bubble-color: $tertiary;
 }
 
-@if $message_bubble_opacity == "25%" {
-    $message-bubble-background-color: mix($message_bubble_color, $secondary, 25%);
+$Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 10%);
+$Other_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 10%);
+
+@if $Message_bubble_opacity == "5%" {
+    $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 5%);
+    $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 5%);    
+}
+
+@if $Message_bubble_opacity == "10%" {
+    $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 10%);
+    $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 10%);     
+}
+
+@if $Message_bubble_opacity == "15%" {
+    $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 15%);
+    $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 15%);     
+}
+
+@if $Message_bubble_opacity == "20%" {
+    $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 20%);
+    $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 20%);     
+}
+
+@if $Message_bubble_opacity == "25%" {
+    $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 25%);
+    $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 25%);     
 }
 
 
@@ -41,21 +66,52 @@ $message-bubble-background-color: mix($message_bubble_color, $secondary, 10%);
     content: "#{$message_button_added_text}";
 }
 
-/* Message bubble colour */
-.archetype-private_message .topic-body .cooked {
-     @if $show_message_bubble  == "true" {
-      background: $message-bubble-background-color;    
-      border: 1px solid $primary-low-mid;
-      -webkit-border-radius: 1.5em;
+@if $show_message_bubble  == "true" {
+    
+    .archetype-private_message div.topic-body.clearfix > div.topic-meta-data {
+        padding: 5px;
+    }
+
+    .archetype-private_message .topic-body {
+        border-top: 0px;
+        padding: 15px 0 0 5px;
+    }
+
+    .archetype-private_message div.topic-avatar {
+        border-top: 0px;
+        padding-top: 5px;
+    }
+    
+    .archetype-private_message  .topic-body .regular {
+        margin-top: 0px;
+    }
+
+    .archetype-private_message div.topic-body.clearfix > div.regular.contents > section {
+        margin: 10px 0;
+    }
+
+    /* Message bubble*/
+    .archetype-private_message .topic-body .cooked {
+        background: $Other_message-bubble-background-color;    
+        border: 1px solid $primary-low-mid;
+        -webkit-border-radius: 1.5em;
             border-radius: 1.5em;
             border-top-left-radius: 0px;
-      -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-      max-width: 100%;
-      padding: 1em;
-      position: relative;
-      display:inline-block;
+        @if $Show_box_shadow  == "true" {
+            -webkit-box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+        max-width: 100%;
+        padding: 1em;
+        position: relative;
+        display:inline-block;
     }
+    
+    .archetype-private_message div.current-user-post .topic-body .cooked {
+        background: $Your_message-bubble-background-color;
+    }
+    
+    
 }
 
 
