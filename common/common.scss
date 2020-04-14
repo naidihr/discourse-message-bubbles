@@ -66,7 +66,7 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
     content: "#{$Message_button_added_text}";
 }
 
-@if $show_message_bubble  == "true" {
+@if $Show_message_bubble  == "true" {
     
     .archetype-private_message div.topic-body.clearfix > div.topic-meta-data {
         padding: 5px;
