@@ -20,7 +20,7 @@ Your_message_bubble_color:
 
 Other_message_bubble_color:
   type: enum
-  default: secondary
+  default: blue
   choices:
     - primary
     - secondary
