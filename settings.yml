@@ -10,12 +10,22 @@ Your_message_bubble_color:
     - primary
     - secondary
     - tertiary
+    - black
+    - white
+    - gray
+    - silver
+    - maroon
     - red
-    - orange
-    - yellow
-    - green
-    - blue
     - purple
+    - fushsia
+    - green
+    - lime
+    - olive
+    - yellow
+    - navy
+    - blue
+    - teal
+    - aqua
   description: 'Select the background color of <b>your</b> messages, sent from you.<br>The primary, secondary and teriary options are taken from your theme color settings.'
 
 Other_message_bubble_color:
