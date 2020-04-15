@@ -116,7 +116,7 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
             box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.2);
         }
         max-width: 100%;
-        padding: 1em;
+        padding: 5px;
         position: relative;
         display: inline-block;
     }
@@ -126,7 +126,7 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
     }
     
     .archetype-private_message .topic-body .cooked{
-        padding: 0px;
+        padding: 10px 10px 0 10px;
     }
     .archetype-private_message div.reply{
           background: $secondary;
