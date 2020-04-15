@@ -131,9 +131,14 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
     .archetype-private_message .topic-body .cooked{
         padding: 10px 10px 0 10px;
     }
+    
     .archetype-private_message div.reply{
           background: $secondary;
     }
+    
+    .archetype-private_message .onebox {
+          background: $secondary;
+    }  
     
 }
 
