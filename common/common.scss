@@ -90,8 +90,22 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
         margin: 10px 0;
     }
 
+       
+    .archetype-private_message .topic-meta-data {
+        display: block;
+    }
+    
+     .archetype-private_message .topic-body .contents{        
+        position: relative;
+        display: inline-block;
+    }   
+    .archetype-private_message .topic-meta-data div {
+        display: inline-block;
+        float: left;
+    }
+    
     /* Message bubble*/
-    .archetype-private_message .topic-body .cooked {
+    .archetype-private_message .topic-body .contents, .archetype-private_message div.reply{        
         background: $Other_message-bubble-background-color;    
         border: 1px solid $primary-low-mid;
         -webkit-border-radius: 1.5em;
@@ -104,13 +118,17 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
         max-width: 100%;
         padding: 1em;
         position: relative;
-        display:inline-block;
+        display: inline-block;
     }
     
-    .archetype-private_message div.current-user-post .topic-body .cooked {
+    .archetype-private_message div.current-user-post .topic-body .contents {
         background: $Your_message-bubble-background-color;
     }
     
+    
+    .archetype-private_message div.reply{
+          background: $secondary;
+    }
     
 }
 
