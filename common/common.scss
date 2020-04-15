@@ -125,7 +125,9 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
         background: $Your_message-bubble-background-color;
     }
     
-    
+    .archetype-private_message .topic-body .cooked{
+        padding: 0px;
+    }
     .archetype-private_message div.reply{
           background: $secondary;
     }
