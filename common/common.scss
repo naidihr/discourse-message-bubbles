@@ -80,7 +80,7 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
     .archetype-private_message div.topic-avatar {
         border-top: 0px;
         padding-top: 5px;
-        padding-bottom: 5px;
+        padding-bottom: 7px;
     }
     
     .archetype-private_message  .topic-body .regular {
@@ -118,10 +118,11 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
             -webkit-box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.2);
             box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.2);
         }
-        max-width: 100%;
+          max-width: 95%;
         padding: 5px;
         position: relative;
         display: inline-block;
+        float: left;
     }
     
     .archetype-private_message div.current-user-post .topic-body .contents {
@@ -140,6 +141,13 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
           background: $secondary;
     }  
     
+    .archetype-private_message div.topic-status-info {
+          border-top: 0px;
+    }      
+    
+    .archetype-private_message .onscreen-post {
+          border-top: 0px;
+    }   
 }
 
 
