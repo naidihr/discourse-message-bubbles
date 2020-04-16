@@ -1,8 +1,10 @@
 <script type="text/discourse-plugin" version="0.8">
-  api.addPostClassesCallback((attrs) => {
-    const user = api.getCurrentUser();
-    if (attrs.user_id === user.id)  {
-      return ['current-user-post']
-    }
-  });
+   const currentUser = api.getCurrentUser();
+    api.addPostClassesCallback((attrs) => {
+        if (currentUser && currentUser.id === attrs.user_id) {
+            return ["current-user-post"];
+        } else {
+            return [];
+        }
+    });
 </script>
