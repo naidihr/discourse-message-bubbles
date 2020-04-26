@@ -22,7 +22,7 @@ Your_message_text_color:
 Other_message_text_color:
   type: string
   default: primary
-  description: 'The text color in message bubbles sent to you.
+  description: 'The text color in message bubbles sent to you.'
 
 Message_bubble_opacity:
   type: enum
