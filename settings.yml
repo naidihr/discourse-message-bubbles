@@ -17,7 +17,7 @@ Other_message_bubble_color:
 Your_message_text_color:
   type: string
   default: primary
-  description: 'The text color of the message bubble.<br>Enter primary or secondary to match your light and dark theme.<br>You can also enter color names or html color codes e.g. as above.
+  description: 'The text color of the message bubble.<br>Enter primary or secondary to match your light and dark theme.<br>You can also enter color names or html color codes e.g. as above.'
 
 Other_message_text_color:
   type: string
