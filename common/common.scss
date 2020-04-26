@@ -39,9 +39,6 @@
     $Other_message-bubble-color: blue;
 }
 
-$Your_message_text_color: $primary;
-$Other_message_text_color: $primary;
-
 @if ($Your_message_text_color == ""){
     $Your_message_text_color: $primary;
 }
