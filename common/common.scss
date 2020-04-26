@@ -30,32 +30,71 @@
     $Other_message-bubble-color: $tertiary;
 }
 
-$Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 10%);
-$Other_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 10%);
 
-@if $Message_bubble_opacity == "5%" {
+
+@if ($Your_message_bubble_color == ""){
+    $Your_message-bubble-color: green;
+}
+@if ($Other_message_bubble_color == ""){
+    $Other_message-bubble-color: blue;
+}
+
+$Your_message_text_color: $primary;
+$Other_message_text_color: $primary;
+
+@if ($Your_message_text_color == ""){
+    $Your_message_text_color: $primary;
+}
+@if ($Other_message_text_color == ""){
+    $Other_message_text_color: $primary;
+}
+@if ($Your_message_text_color == "primary"){
+    $Your_message_text_color: $primary;
+}
+@if ($Other_message_text_color == "primary"){
+    $Other_message_text_color: $primary;
+}
+@if ($Your_message_text_color == "secondary"){
+    $Your_message_text_color: $secondary;
+}
+@if ($Other_message_text_color == "secondary"){
+    $Other_message_text_color: $secondary;
+}
+
+$Your_message-bubble-background-color: $Your_message_bubble_color;
+$Other_message-bubble-background-color: $Other_message_bubble_color;
+
+@if ($Message_bubble_opacity == "5%") {
     $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 5%);
     $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 5%);    
 }
 
-@if $Message_bubble_opacity == "10%" {
+@if ($Message_bubble_opacity == "10%") {
     $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 10%);
     $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 10%);     
 }
 
-@if $Message_bubble_opacity == "15%" {
+@if ($Message_bubble_opacity == "15%") {
     $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 15%);
     $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 15%);     
 }
 
-@if $Message_bubble_opacity == "20%" {
+@if ($Message_bubble_opacity == "20%") {
     $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 20%);
     $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 20%);     
 }
 
-@if $Message_bubble_opacity == "25%" {
+@if ($Message_bubble_opacity == "25%") {
     $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 25%);
     $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 25%);     
+}
+@if ($Message_bubble_opacity == "50%") {
+    $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 50%);
+    $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 50%);     
+}
+@if ($Message_bubble_opacity == "75%") {
+    $Your_message-bubble-background-color: mix($Your_message_bubble_color, $secondary, 75%);
+    $Other_message-bubble-background-color: mix($Other_message_bubble_color, $secondary, 75%);     
 }
 
 
@@ -108,7 +147,8 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
     
     /* Message bubble*/
     .archetype-private_message .topic-body .contents, .archetype-private_message div.reply{        
-        background: $Other_message-bubble-background-color;    
+        background: $Other_message-bubble-background-color;
+        color: $Other_message_text_color;
         border: 1px solid $primary-low-mid;
         -webkit-border-radius: 1.5em;
             border-radius: 1.5em;
@@ -125,6 +165,7 @@ $Other_message-bubble-background-color: mix($Your_message_bubble_color, $seconda
     }
     
     .archetype-private_message div.current-user-post .topic-body .contents {
+        color: $Your_message_text_color;
         background: $Your_message-bubble-background-color;
     }
     
