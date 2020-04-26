@@ -1,5 +1,5 @@
 {
-  "name": "Discourse Message Bubbles",
+  "name": "Personal Message Bubbles",
   "about_url": "https://meta.discourse.org/t/personal-message-bubbles/147994",
   "license_url": "https://github.com/naidihr/discourse-message-bubbles/blob/master/LICENSE",
   "component": true
