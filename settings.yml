@@ -36,7 +36,7 @@ Message_bubble_opacity:
     - 50%
     - 75%
     - 100%
-  description: 'Select the opacity of the message background color. The larger the percentage the deeper the color<br>The bubble color is blended with the theme background color. This enables the color to adjust to light and dark theme settings.'
+  description: 'Select the opacity of the message background color. The larger the percentage the deeper the color<br>The bubble color is blended with the theme background color. This enables the color to adjust to light and dark theme settings.<br>PLEASE NOTE when usimg html color codes (e.g. #00FF00) you must set the opacity to 100%'
   
 Show_box_shadow:
   type: bool
