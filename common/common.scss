@@ -101,6 +101,12 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
     content: "#{$Message_button_added_text}";
 }
 
+@if ($Message_button_added_text != "") {
+    #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label {
+        padding-right: 5px;
+    }
+}
+
 @if $Show_message_bubbles  == "true" {
     
     .archetype-private_message div.topic-body.clearfix > div.topic-meta-data {
