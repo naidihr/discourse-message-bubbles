@@ -1,9 +1,6 @@
-# discourse-message-bubbles
+# Discourse Personal Message Bubbles Theme Component
 
-Discourse Message Bubbles is a Discourse theme plugin.
-https://meta.discourse.org/t/personal-message-bubbles/147994
-
-The theme plugin changes the style of the personal message posts to bubbles to help distinguish them from topics.
+The theme component changes the style of the personal message posts to bubbles to help distinguish them from topics.
 
 **Settings:**
 
@@ -13,4 +10,4 @@ The theme plugin changes the style of the personal message posts to bubbles to h
 * Choose whether to display the message bubble in a box shadow.
 * Optionally append text to the Message Reply button to distinguish it from the Topic Reply button.
 
-
+To learn more, check out: https://meta.discourse.org/t/personal-message-bubbles/147994
