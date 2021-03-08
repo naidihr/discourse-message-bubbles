@@ -18,6 +18,10 @@
     $Your_message-bubble-color: $tertiary;
 }
 
+@if $Your_message_bubble_color == "quaternary" {
+    $Your_message-bubble-color: $quaternary;
+}
+
 @if $Other_message_bubble_color == "primary" {
     $Other_message-bubble-color: $primary;
 }
@@ -30,7 +34,9 @@
     $Other_message-bubble-color: $tertiary;
 }
 
-
+@if $Other_message_bubble_color == "quaternary" {
+    $Other_message-bubble-color: $quaternary;
+}
 
 @if ($Your_message_bubble_color == ""){
     $Your_message-bubble-color: green;
@@ -152,10 +158,13 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
     .archetype-private_message .topic-body .contents, .archetype-private_message div.reply{        
         background: $Other_message-bubble-background-color;
         color: $Other_message_text_color;
-        border: 1px solid $primary-low-mid;
+        border: 1px solid $primary-low-mid; 
         -webkit-border-radius: 1.5em;
             border-radius: 1.5em;
-            border-top-left-radius: 0px;
+            border-top-left-radius: 0px; 
+        @if $Show_box_border  == "false" {
+            border: none !important;     
+        }  
         @if $Show_box_shadow  == "true" {
             -webkit-box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.2);
             box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.2);
