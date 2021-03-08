@@ -6,7 +6,7 @@ Show_message_bubbles:
 Your_message_bubble_color:
   type: string
   default: green
-  description: 'Enter a background color for <b>your</b> messages, sent from you.<br> Colors can be by name e.g. blue, green red, yellow, black, white<br>You can also enter primary, secondary and teriary to match your theme color settings.<br>For FIXED colors you can also enter a html code e.g. #0066CC. PLEASE NOTE you must set the opacity to 100% if using the html color codes.'
+  description: 'Enter a background color for <b>your</b> messages, sent from you.<br> Colors can be by name e.g. blue, green red, yellow, black, white<br>You can also enter primary, secondary, tertiary and quaternary to match your theme color settings.<br>For FIXED colors you can also enter a html code e.g. #0066CC. PLEASE NOTE you must set the opacity to 100% if using the html color codes.'
 
 
 Other_message_bubble_color:
