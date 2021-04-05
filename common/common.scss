@@ -110,7 +110,7 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
 
 
 @if ($Message_button_added_text != "") {
-    .archetype-private_message #reply-control .btn-primary {
+    .archetype-private_message #reply-control .btn-primary.d-button-label {
         content: "#{$Message_button_added_text}";
     }    
     #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label {
