@@ -110,6 +110,7 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
     #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label {
         padding-right: 5px;
     }
+    
 }
 
 @if ($Message_button_before_text != "") {
@@ -126,6 +127,9 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
     #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label {
         padding-left: 5px;
     }
+    #reply-control > div.reply-area > div.submit-panel > div > button > span.d-button-label {
+        padding-left: 5px;   
+    }       
 }
 
 @if $Show_message_bubbles  == "true" {
