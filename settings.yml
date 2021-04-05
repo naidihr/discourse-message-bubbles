@@ -51,5 +51,9 @@ Show_box_shadow:
 Message_button_added_text:
   type: string
   default: ''
-  description: 'Text to be appended to "Reply" button'
+  description: 'Text to be appended to "Reply" button, to appear after the word "Reply"'
 
+Message_button_before_text:
+  type: string
+  default: ''
+  description: 'Text to be prepended to "Reply" button, to appear before the word "Reply"'
