@@ -101,20 +101,24 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
 }
 
 
-/* Add text to Reply buttons 
-.archetype-private_message #topic-footer-buttons button.create:after,
-.archetype-private_message #reply-control .btn-primary:after {
-   content: "#{$Message_button_added_text}";
-}
-*/
-
-
+/* Add text to Reply buttons */
 @if ($Message_button_added_text != "") {
-    .archetype-private_message #reply-control .btn-primary.d-button-label {
+    .archetype-private_message #topic-footer-buttons button.create:after,
+    .archetype-private_message #reply-control .btn-primary:after {
         content: "#{$Message_button_added_text}";
-    }    
+    }
     #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label {
         padding-right: 5px;
+    }
+}
+
+@if ($Message_button_before_text != "") {
+    .archetype-private_message #topic-footer-buttons button.create:before,
+    .archetype-private_message #reply-control .btn-primary:before {
+        content: "#{$Message_button_before_text}";
+    }
+    #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label {
+        padding-left: 5px;
     }
 }
 
