@@ -113,15 +113,15 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
 }
 
 @if ($Message_button_before_text != "") {
+    .archetype-private_message #reply-control .btn-primary > svg {
+        display: none;   
+    }
     .archetype-private_message #topic-footer-buttons button.create:before,
     .archetype-private_message #reply-control .btn-primary:before {
         content: "#{$Message_button_before_text}";
     }
     #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label {
         padding-left: 5px;
-    }
-    .archetype-private_message #reply-control button.btn-primary svg {
-        display: none;   
     }
 }
 
