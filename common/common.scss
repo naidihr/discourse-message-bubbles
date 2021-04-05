@@ -107,8 +107,8 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
     .archetype-private_message #reply-control .btn-primary:after {
         content: "#{$Message_button_added_text}";
     }
-    archetype-private_message #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label, 
-    archetype-private_message #reply-control > div.reply-area > div.submit-panel > div > button > span.d-button-label  {
+    .archetype-private_message #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label, 
+    .archetype-private_message #reply-control > div.reply-area > div.submit-panel > div > button > span.d-button-label  {
         padding-right: 5px;
     }
     
@@ -125,8 +125,8 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
     .archetype-private_message #reply-control .btn-primary:before {
         content: "#{$Message_button_before_text}";
     }
-    archetype-private_message #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label,
-    archetype-private_message #reply-control > div.reply-area > div.submit-panel > div > button > span.d-button-label {
+    .archetype-private_message #topic-footer-buttons .topic-footer-main-buttons>.btn .d-button-label,
+    .archetype-private_message #reply-control > div.reply-area > div.submit-panel > div > button > span.d-button-label {
         padding-left: 5px;
     }   
 }
