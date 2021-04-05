@@ -114,7 +114,7 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
 
 @if ($Message_button_before_text != "") {
     .archetype-private_message #reply-control .btn-primary > svg {
-        display: none;   
+        display: none !important;   
     }
     .archetype-private_message #topic-footer-buttons button.create:before,
     .archetype-private_message #reply-control .btn-primary:before {
