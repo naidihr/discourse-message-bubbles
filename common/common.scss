@@ -115,7 +115,7 @@ $Other_message-bubble-background-color: $Other_message_bubble_color;
 }
 
 @if ($Message_button_before_text != "") {
-    .archetype-private_message #topic-footer-buttons > div.topic-footer-main-buttons > button.btn-primary.create.btn.btn-icon-text.ember-view > svg {
+    .archetype-private_message #topic-footer-buttons > div.topic-footer-main-buttons > button.btn-primary.create.btn.btn-icon-text > svg {
         display: none !important;   
     }
     .archetype-private_message #reply-control > div.reply-area > div.submit-panel > div > button > svg {
